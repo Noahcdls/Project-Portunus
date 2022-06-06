@@ -17,7 +17,7 @@ def prndlOut(car):
       code = msg.data
       frame = (key, code)
       if(key == value):
-        if(car == "HondaFit2012")  
+        if(car == "HondaFit2012"):  
           if(code[3] == 0x01):
            return "P"
           elif(code[3] == 0x02):
@@ -29,7 +29,7 @@ def prndlOut(car):
           elif(code[0] == 0x01 and code[1] == 0x01):
            return "L"
           return "N/A"
-        elif(car == "Prius2016")
+        elif(car == "Prius2016"):
           if(code[5] == 0x20):
            return "P"
           elif(code[5] == 0xa1):
